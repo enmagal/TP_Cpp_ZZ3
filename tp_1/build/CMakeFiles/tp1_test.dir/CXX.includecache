@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/local.isima.fr/enmagal/tp_1/src/point.hpp
+sstream
+-
+
+/home/local.isima.fr/enmagal/tp_1/src/polaire.cpp
+polaire.hpp
+/home/local.isima.fr/enmagal/tp_1/src/polaire.hpp
+sstream
+-
+
+/home/local.isima.fr/enmagal/tp_1/src/polaire.hpp
+point.hpp
+/home/local.isima.fr/enmagal/tp_1/src/point.hpp
+
