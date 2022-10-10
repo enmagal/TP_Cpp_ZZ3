@@ -1,5 +1,8 @@
 #include "cartesien.hpp"
+#include "polaire.hpp"
+
 #include <sstream>
+#include <cmath>
 
 Cartesien::Cartesien() : x(0), y(0)
 {
@@ -28,12 +31,18 @@ void Cartesien::setX(double px)
     x = px;
 }
 
-void Cartesien::setY(double pd)
+void Cartesien::setY(double py)
 {
     y = py;
 }
 
-void Polaire::afficher(std::stringstream& flux)
+void Cartesien::afficher(std::ostream& flux) const
 {
     flux << "(x=" << getX() <<";y=" << getY() << ")";
+}
+
+void Cartesien::convertir(Polaire& point_pol) const
+{
+    point_pol.setAngle(std::atan2(getX(), getY()));
+    point_pol.setDistance(sqrt(getX()*getX() + getY()*getY()));
 }

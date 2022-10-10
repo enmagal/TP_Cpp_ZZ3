@@ -1,5 +1,8 @@
 #include "polaire.hpp"
+#include "cartesien.hpp"
+
 #include <sstream>
+#include <cmath>
 
 Polaire::Polaire() : a(0), d(0)
 {
@@ -33,7 +36,13 @@ void Polaire::setDistance(double pd)
     d = pd;
 }
 
-void Polaire::afficher(std::stringstream& flux)
+void Polaire::afficher(std::ostream& flux) const
 {
     flux << "(a=" << getAngle() <<";d=" << getDistance() << ")";
+}
+
+void Polaire::convertir(Cartesien& point_car) const
+{
+    point_car.setX(getDistance() * std::sin(getAngle()));
+    point_car.setY(getDistance() * std::cos(getAngle()));
 }

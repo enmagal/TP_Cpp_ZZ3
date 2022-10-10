@@ -6,17 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/local.isima.fr/enmagal/tp_1/src/point.hpp
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/cartesien.cpp
+cartesien.hpp
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/cartesien.hpp
 sstream
 -
 
-/home/local.isima.fr/enmagal/tp_1/src/polaire.cpp
-polaire.hpp
-/home/local.isima.fr/enmagal/tp_1/src/polaire.hpp
-sstream
--
-
-/home/local.isima.fr/enmagal/tp_1/src/polaire.hpp
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/cartesien.hpp
 point.hpp
-/home/local.isima.fr/enmagal/tp_1/src/point.hpp
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/point.hpp
+
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/main_point.cpp
+cstdlib
+-
+point.hpp
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/point.hpp
+
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/point.cpp
+point.hpp
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/point.hpp
+iostream
+-
+
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/point.hpp
+sstream
+-
+iosfwd
+-
+
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/polaire.cpp
+polaire.hpp
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/polaire.hpp
+sstream
+-
+
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/polaire.hpp
+point.hpp
+/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src/point.hpp
 

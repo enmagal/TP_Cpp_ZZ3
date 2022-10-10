@@ -62,7 +62,7 @@ TEST_CASE ( "TP1_Polaire::Affichage" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 6
-/*TEST_CASE ( "TP1_Cartesien::Constructeur" ) {
+TEST_CASE ( "TP1_Cartesien::Constructeur" ) {
  const double x = 12.0;
  const double y = 24.0;
 
@@ -70,18 +70,18 @@ TEST_CASE ( "TP1_Polaire::Affichage" ) {
 
  REQUIRE ( c.getX() == Approx(x) );
  REQUIRE ( c.getY() == Approx(y) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 7
-/*TEST_CASE ( "TP1_Cartesien::ConstructeurDefaut" ) {
+TEST_CASE ( "TP1_Cartesien::ConstructeurDefaut" ) {
  Cartesien c;
 
  REQUIRE ( c.getX() == Approx(0.0) );
  REQUIRE ( c.getY() == Approx(0.0) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP1_Cartesien::Accesseurs" ) {
+TEST_CASE ( "TP1_Cartesien::Accesseurs" ) {
  const double x = 12.0;
  const double y = 24.0;
 
@@ -92,28 +92,28 @@ TEST_CASE ( "TP1_Polaire::Affichage" ) {
 
  REQUIRE ( c.getX() == Approx(x) );
  REQUIRE ( c.getY() == Approx(y) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
-/*TEST_CASE ( "TP1_Cartesien::AccesseursConstants" ) {
+TEST_CASE ( "TP1_Cartesien::AccesseursConstants" ) {
  const Cartesien c;
 
  REQUIRE ( c.getX() == Approx(0.0) );
  REQUIRE ( c.getY() == Approx(0.0) );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 10
-/*TEST_CASE ( "TP1_Cartesien::Affichage" ) {
+TEST_CASE ( "TP1_Cartesien::Affichage" ) {
  Cartesien c(12.0,24.0);
  std::stringstream flux;
 
  c.afficher(flux);
 
  REQUIRE ( flux.str() == "(x=12;y=24)" );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 11
-/*TEST_CASE ( "TP1_Point::AffichageVirtuel" ) {
+TEST_CASE ( "TP1_Point::AffichageVirtuel" ) {
  Polaire p(12.0,24.0);
  Cartesien c(13.0,25.0);
 
@@ -128,10 +128,10 @@ TEST_CASE ( "TP1_Polaire::Affichage" ) {
 
  REQUIRE ( flux1.str() == "(a=12;d=24)" );
  REQUIRE ( flux2.str() == "(x=13;y=25)" );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 12
-/*TEST_CASE ( "TP1_Point::OperateurFlux" ) {
+TEST_CASE ( "TP1_Point::OperateurFlux" ) {
  Polaire p(12.0,24.0);
  Cartesien c(13.0,25.0);
 
@@ -146,10 +146,10 @@ TEST_CASE ( "TP1_Polaire::Affichage" ) {
 
  REQUIRE ( flux1.str() == "(a=12;d=24)" );
  REQUIRE ( flux2.str() == "(x=13;y=25)" );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 13
-/*TEST_CASE ( "TP1_Point::ConversionVersPolaire_V1" ) {
+TEST_CASE ( "TP1_Point::ConversionVersPolaire_V1" ) {
  const double x = 12.0;
  const double y = 24.0;
  const double a = 63.434948;
@@ -162,7 +162,7 @@ TEST_CASE ( "TP1_Polaire::Affichage" ) {
 
  REQUIRE ( p.getAngle() == Approx(a).epsilon(1e-3) );
  REQUIRE ( p.getDistance() == Approx(d).epsilon(1e-3) );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 14
 /*TEST_CASE ( "TP1_Point::ConversionVersCartesien_V1" ) {

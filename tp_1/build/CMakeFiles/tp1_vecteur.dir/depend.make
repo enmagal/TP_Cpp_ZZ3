@@ -3,6 +3,7 @@
 
 CMakeFiles/tp1_vecteur.dir/src/cartesien.cpp.o: ../src/cartesien.cpp
 CMakeFiles/tp1_vecteur.dir/src/cartesien.cpp.o: ../src/cartesien.hpp
+CMakeFiles/tp1_vecteur.dir/src/cartesien.cpp.o: ../src/point.hpp
 
 CMakeFiles/tp1_vecteur.dir/src/main_vecteur.cpp.o: ../src/main_vecteur.cpp
 
