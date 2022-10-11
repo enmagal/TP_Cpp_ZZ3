@@ -10,13 +10,15 @@ class Polaire : public Point
     public :
         Polaire();
         Polaire(double, double);
+        Polaire(Cartesien&);
         ~Polaire();
         double getAngle() const;
         double getDistance() const;
         void setAngle(double);
         void setDistance(double);
         void afficher(std::ostream&) const override;
-        void convertir(Cartesien&) const;
+        void convertir(Polaire&) const override;
+        void convertir(Cartesien&) const override;
 
 
     private :

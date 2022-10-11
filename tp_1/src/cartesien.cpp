@@ -12,6 +12,12 @@ Cartesien::Cartesien(double px, double py) : x(px), y(py)
 {
 }
 
+Cartesien::Cartesien(Polaire& p)
+{   
+    x = p.getDistance() * std::cos(p.getAngle() * (2 * acos(0.0)) / 180);
+    y = p.getDistance() * std::sin(p.getAngle() * (2 * acos(0.0)) / 180);
+}
+
 Cartesien::~Cartesien()
 {
 }
@@ -43,6 +49,12 @@ void Cartesien::afficher(std::ostream& flux) const
 
 void Cartesien::convertir(Polaire& point_pol) const
 {
-    point_pol.setAngle(std::atan2(getX(), getY()));
+    point_pol.setAngle(std::atan2(getY(), getX()) * 180 / (2 * acos(0.0)));
     point_pol.setDistance(sqrt(getX()*getX() + getY()*getY()));
+}
+
+void Cartesien::convertir(Cartesien& point_car) const
+{
+    point_car.setX(getX());
+    point_car.setY(getY());
 }
