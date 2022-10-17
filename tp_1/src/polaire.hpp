@@ -10,7 +10,7 @@ class Polaire : public Point
     public :
         Polaire();
         Polaire(double, double);
-        Polaire(Cartesien&);
+        Polaire(Cartesien);
         ~Polaire();
         double getAngle() const;
         double getDistance() const;

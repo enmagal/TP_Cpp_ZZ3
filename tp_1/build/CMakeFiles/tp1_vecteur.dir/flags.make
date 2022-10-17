@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/local.isima.fr/enmagal/TP C++/TP_Cpp_ZZ3/tp_1/src"
+CXX_INCLUDES = -I/home/local.isima.fr/enmagal/TP_Cpp_ZZ3/tp_1/src
 
 CXX_FLAGS = -std=gnu++14 -Wall -pedantic 
 

@@ -12,7 +12,7 @@ Polaire::Polaire(double pa, double pd) : a(pa), d(pd)
 {
 }
 
-Polaire::Polaire(Cartesien& c)
+Polaire::Polaire(Cartesien c)
 {
     a = std::atan2(c.getY(), c.getX()) * 180 / (2 * acos(0.0));
     d = sqrt(c.getX()*c.getX() + c.getY()*c.getY());
