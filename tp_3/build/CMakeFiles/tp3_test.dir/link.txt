@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/tp3_test.dir/test/catch.cpp.o CMakeFiles/tp3_test.dir/test/tp3_test.cpp.o -o tp3_test  -lpthread -lstdc++ -lm 
