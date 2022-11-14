@@ -21,7 +21,7 @@ class ExceptionChaine : public std::exception{
 template <typename T>
 std::string chaine(T x)
 {
-    throw(ExceptionChaine(x))
+    throw(ExceptionChaine(x));
 }
 
 #endif
