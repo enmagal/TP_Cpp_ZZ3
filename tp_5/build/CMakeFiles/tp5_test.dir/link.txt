@@ -1,1 +1,1 @@
-/usr/bin/cc -rdynamic CMakeFiles/tp5_test.dir/test/catch.cpp.o CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o CMakeFiles/tp5_test.dir/src/valeur.cpp.o CMakeFiles/tp5_test.dir/src/echantillon.cpp.o -o tp5_test  -lpthread -lstdc++ -lm 
+/usr/bin/cc   -rdynamic CMakeFiles/tp5_test.dir/test/catch.cpp.o CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o CMakeFiles/tp5_test.dir/src/valeur.cpp.o CMakeFiles/tp5_test.dir/src/echantillon.cpp.o  -o tp5_test  -lpthread -lstdc++ -lm 

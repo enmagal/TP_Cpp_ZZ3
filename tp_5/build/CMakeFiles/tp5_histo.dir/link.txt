@@ -1,1 +1,1 @@
-/usr/bin/cc -rdynamic CMakeFiles/tp5_histo.dir/src/main_histo.cpp.o CMakeFiles/tp5_histo.dir/src/valeur.cpp.o CMakeFiles/tp5_histo.dir/src/echantillon.cpp.o -o tp5_histo  -lpthread -lstdc++ -lm 
+/usr/bin/cc   -rdynamic CMakeFiles/tp5_histo.dir/src/main_histo.cpp.o CMakeFiles/tp5_histo.dir/src/valeur.cpp.o CMakeFiles/tp5_histo.dir/src/echantillon.cpp.o  -o tp5_histo  -lpthread -lstdc++ -lm 

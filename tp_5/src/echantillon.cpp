@@ -20,3 +20,5 @@ double Echantillon::getMaximum() const{
     std::vector<Valeur>::iterator result = std::max_element(sample.begin(), sample.end());
     return result;
 }
+
+hello there
