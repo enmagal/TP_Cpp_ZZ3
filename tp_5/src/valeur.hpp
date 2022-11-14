@@ -10,7 +10,9 @@ class Valeur{
         Valeur(int a);
         double getNombre() const;
         void setNombre(double a);
-
+        bool operator<(Valeur const &) const;
 };
+
+  
 
 #endif

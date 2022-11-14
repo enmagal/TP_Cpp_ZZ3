@@ -23,6 +23,8 @@ echantillon.hpp
 /workspaces/TP_Cpp_ZZ3/tp_5/src/echantillon.cpp
 echantillon.hpp
 /workspaces/TP_Cpp_ZZ3/tp_5/src/echantillon.hpp
+algorithm
+-
 
 /workspaces/TP_Cpp_ZZ3/tp_5/src/echantillon.hpp
 valeur.hpp
@@ -35,10 +37,6 @@ valeur.hpp
 /workspaces/TP_Cpp_ZZ3/tp_5/src/valeur.hpp
 
 /workspaces/TP_Cpp_ZZ3/tp_5/src/valeur.hpp
-
-/workspaces/TP_Cpp_ZZ3/tp_5/test/catch.cpp
-catch.hpp
-/workspaces/TP_Cpp_ZZ3/tp_5/test/catch.hpp
 
 /workspaces/TP_Cpp_ZZ3/tp_5/test/catch.hpp
 TargetConditionals.h

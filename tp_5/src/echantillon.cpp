@@ -1,4 +1,5 @@
 #include "echantillon.hpp"
+#include <algorithm>
 
 Echantillon::Echantillon(){
 }
@@ -11,14 +12,12 @@ void Echantillon::ajouter(Valeur value){
     sample.push_back(value);
 }
 
-double Echantillon::getMinimum() const{
-    std::vector<Valeur>::iterator result = std::min_element(sample.begin(), sample.end());
-    return result;
+Valeur Echantillon::getMinimum() const{
+    auto result = std::min_element(sample.begin(), sample.end());
+    return *result;
 }
 
-double Echantillon::getMaximum() const{
-    std::vector<Valeur>::iterator result = std::max_element(sample.begin(), sample.end());
-    return result;
+Valeur Echantillon::getMaximum() const{
+    auto result = std::max_element(sample.begin(), sample.end());
+    return *result;
 }
-
-hello there

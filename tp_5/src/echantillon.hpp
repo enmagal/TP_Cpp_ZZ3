@@ -12,8 +12,8 @@ class Echantillon{
         Echantillon();
         int getTaille() const;
         void ajouter(Valeur value);
-        double getMinimum() const;
-        double getMaximum() const;
+        Valeur getMinimum() const;
+        Valeur getMaximum() const;
 };
 
 class ExceptionMinMax : public std::exception{
@@ -24,6 +24,6 @@ class ExceptionMinMax : public std::exception{
         const char* what() const noexcept override{
             return 0;
         }
-}
+};
 
 #endif

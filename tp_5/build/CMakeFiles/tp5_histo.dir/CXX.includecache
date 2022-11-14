@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/TP_Cpp_ZZ3/tp_5/src/echantillon.cpp
+echantillon.hpp
+/workspaces/TP_Cpp_ZZ3/tp_5/src/echantillon.hpp
+algorithm
+-
+
+/workspaces/TP_Cpp_ZZ3/tp_5/src/echantillon.hpp
+valeur.hpp
+/workspaces/TP_Cpp_ZZ3/tp_5/src/valeur.hpp
+vector
+-
+
+/workspaces/TP_Cpp_ZZ3/tp_5/src/main_histo.cpp
+cstdlib
+-
+
+/workspaces/TP_Cpp_ZZ3/tp_5/src/valeur.cpp
+valeur.hpp
+/workspaces/TP_Cpp_ZZ3/tp_5/src/valeur.hpp
+
+/workspaces/TP_Cpp_ZZ3/tp_5/src/valeur.hpp
+

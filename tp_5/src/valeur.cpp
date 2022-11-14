@@ -12,3 +12,7 @@ double Valeur::getNombre() const{
 void Valeur::setNombre(double a){
     value = a;
 }
+
+bool Valeur::operator<(Valeur const & a) const{
+    return this->getNombre() < a.getNombre();
+} 
