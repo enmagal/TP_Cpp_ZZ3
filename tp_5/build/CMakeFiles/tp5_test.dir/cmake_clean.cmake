@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tp5_test.dir/src/classe.cpp.o"
   "CMakeFiles/tp5_test.dir/src/echantillon.cpp.o"
+  "CMakeFiles/tp5_test.dir/src/histogramme.cpp.o"
   "CMakeFiles/tp5_test.dir/src/valeur.cpp.o"
   "CMakeFiles/tp5_test.dir/test/catch.cpp.o"
   "CMakeFiles/tp5_test.dir/test/tp5_test.cpp.o"

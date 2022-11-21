@@ -3,6 +3,7 @@
 
 #include "valeur.hpp"
 #include <vector>
+#include <cstring>
 
 class Echantillon{
     private:
@@ -14,16 +15,7 @@ class Echantillon{
         void ajouter(Valeur value);
         Valeur getMinimum() const;
         Valeur getMaximum() const;
-};
-
-class ExceptionMinMax : public std::exception{
-    public :
-        explicit ExceptionMinMax(){
-
-        };
-        const char* what() const noexcept override{
-            return 0;
-        }
+        Valeur getValeur(int i) const;
 };
 
 #endif

@@ -82,7 +82,7 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP3_Echantillon::MinMaxException" ) {
+TEST_CASE ( "TP3_Echantillon::MinMaxException" ) {
  Echantillon e;
 
  int error = 0;
@@ -102,10 +102,10 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
  catch (...) { error=1; }
 
  REQUIRE ( error == 2 );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
-/*TEST_CASE ( "TP3_Echantillon::Indice" ) {
+TEST_CASE ( "TP3_Echantillon::Indice" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -129,10 +129,10 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
  catch (...) { error=1; }
 
  REQUIRE ( error == 2 );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 10
-/*TEST_CASE ( "TP3_Classe::Constructeur" ) {
+TEST_CASE ( "TP3_Classe::Constructeur" ) {
  const double a = 12.0;
  const double b = 24.0;
 
@@ -141,10 +141,10 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
  REQUIRE ( c.getBorneInf() == Approx(a) );
  REQUIRE ( c.getBorneSup() == Approx(b) );
  REQUIRE ( c.getQuantite() == 0u );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 11
-/*TEST_CASE ( "TP3_Classe::Accesseurs" ) {
+TEST_CASE ( "TP3_Classe::Accesseurs" ) {
  const double   a = 12.0;
  const double   b = 24.0;
  const unsigned n = 7;
@@ -162,10 +162,10 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
  c.ajouter();
 
  REQUIRE ( c.getQuantite() == n+1 );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 12
-/*TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
+TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
  Histo h(5.0,15.0,5);
 
  double bornesInf[] = { 5.0, 7.0,  9.0, 11.0, 13.0 };
@@ -181,10 +181,10 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
   REQUIRE ( c.getQuantite() == 0u );
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 13
-/*TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
+TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
  double v[] = { 7.0, 9.0, 8.0, 5.0, 10.0, 14.0, 13.0, 6.0, 5.5, 13.5 };
  double n[] = { 3, 2, 2, 0, 3 };
 
@@ -203,7 +203,7 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
  for (const Classe & c : h.getClasses()) {
   REQUIRE ( c.getQuantite() == Approx(n[i++]) );
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 14
 /*TEST_CASE ( "TP3_Histogramme::Generique" ) {

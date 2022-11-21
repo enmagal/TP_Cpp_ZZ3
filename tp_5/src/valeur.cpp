@@ -1,4 +1,3 @@
-
 #include "valeur.hpp"
 
 Valeur::Valeur(): value(0){}
