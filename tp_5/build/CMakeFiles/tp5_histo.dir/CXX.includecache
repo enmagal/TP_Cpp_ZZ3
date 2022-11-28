@@ -18,17 +18,25 @@ cstring
 
 ../src/valeur.hpp
 
-/home/local.isima.fr/enmagal/shared/TP_Cpp_ZZ3/tp_5/src/histogramme.cpp
+/workspaces/TP_Cpp_ZZ3/tp_5/src/classe.cpp
+classe.hpp
+/workspaces/TP_Cpp_ZZ3/tp_5/src/classe.hpp
+
+/workspaces/TP_Cpp_ZZ3/tp_5/src/classe.hpp
+
+/workspaces/TP_Cpp_ZZ3/tp_5/src/histogramme.cpp
 histogramme.hpp
-/home/local.isima.fr/enmagal/shared/TP_Cpp_ZZ3/tp_5/src/histogramme.hpp
+/workspaces/TP_Cpp_ZZ3/tp_5/src/histogramme.hpp
 algorithm
 -
 
-/home/local.isima.fr/enmagal/shared/TP_Cpp_ZZ3/tp_5/src/histogramme.hpp
+/workspaces/TP_Cpp_ZZ3/tp_5/src/histogramme.hpp
 valeur.hpp
 -
 echantillon.hpp
 -
 classe.hpp
+-
+set
 -
 

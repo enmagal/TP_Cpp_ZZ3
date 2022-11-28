@@ -31,3 +31,7 @@ void Classe::setQuantite(unsigned n){
 void Classe::ajouter(){
     quantite += 1;
 }
+
+bool Classe::operator<(Classe const & a) const{
+    return getBorneInf() < a.getBorneInf();
+} 

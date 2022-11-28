@@ -8,14 +8,14 @@ Histo::Histo(double borneInf, double borneSup, int nombreDeClasse){
 
     for (int i=0; i< nombreDeClasse; i++) {
         Classe c(borneInf, borneSup);
-        classes.push_back(c);
+        classes.insert(c);
 
         borneInf = borneSup;
         borneSup += step;
     }
 }
 
-std::vector<Classe> Histo::getClasses() const{
+std::set<Classe> Histo::getClasses() const{
     return classes;
 }
 
@@ -24,14 +24,18 @@ void Histo::ajouter(Echantillon e){
         Valeur v = e.getValeur(i);
         auto getClasse = [&v](Classe c){
             bool inClasse = false;
-            if (v.getNombre() > c.getBorneInf() && v.getNombre() < c.getBorneSup()){
+            if (v.getNombre() >= c.getBorneInf() && v.getNombre() < c.getBorneSup()){
                 inClasse = true;
             }
             return inClasse;
         };
         auto result = std::find_if(begin(classes), end(classes), getClasse);
 
-        (*result).ajouter();
+        Classe classe_temp((*result).getBorneInf(), (*result).getBorneSup());
+        classe_temp.setQuantite((*result).getQuantite());
+        classe_temp.ajouter();
+        classes.erase(result);
+        classes.insert(classe_temp);
 
     } 
 }

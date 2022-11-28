@@ -16,6 +16,7 @@ class Classe{
         void setBorneSup(double b);
         void setQuantite(unsigned n);
         void ajouter();
+        bool operator<(Classe const &) const;
 };
 
 #endif

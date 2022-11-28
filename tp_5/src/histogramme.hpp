@@ -4,14 +4,15 @@
 #include <valeur.hpp>
 #include <echantillon.hpp>
 #include <classe.hpp>
+#include <set>
 
 class Histo{
     private :
-        std::vector<Classe> classes;
+        std::set<Classe> classes;
 
     public :
         Histo(double borneInf, double borneSup, int nombreDeClasse);
-        std::vector<Classe> getClasses() const;
+        std::set<Classe> getClasses() const;
         void ajouter(Echantillon e);
 };
 
